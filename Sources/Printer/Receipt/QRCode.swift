@@ -22,7 +22,7 @@ public struct QRCode: ReceiptItem {
     }
     public enum ModuleSize: UInt8 {
         case s1D = 0x1D
-        case s28 = 0xs28
+        case s28 = 0x28
         case s6B = 0x6B
         case s03 = 0x03
         case s00 = 0x00
