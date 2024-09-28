@@ -59,7 +59,7 @@ public struct QRCode: ReceiptItem {
         data += ([29, 40, 107, pl, ph, 49, 80, 48] + contentData)
         
         // Print the symbol data in the symbol storage area
-        data += [29, 40, 107, 3, 0, 49, 81, 0]
+        data += [29, 40, 107, 3, 0, 49, 81, 48]
         
         return data
     }
