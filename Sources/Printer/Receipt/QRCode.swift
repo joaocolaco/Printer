@@ -42,11 +42,11 @@ public struct QRCode: ReceiptItem {
         }
         // Code type for QR code
        
-        // Set dot size
+        // Select the model 
         var data = [29, 40, 107, 4, 0, 49, 65, m.rawValue, width]
 
-        //  Select the model
-        data += [29, 40, 107, 3, 0, 49, 65, m.rawValue]
+        // Set module size
+        data += [29, 40, 107, 3, 0, 49, 67, 3]
         
         //  Select the error correction level
         data += [29, 40, 107, 3, 0, 49, 69, level.rawValue]
