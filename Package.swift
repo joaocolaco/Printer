@@ -10,7 +10,7 @@ import PackageDescription
 
 let package = Package(
     name: "Printer",
-    platforms: [.iOS(.v9)],
+    platforms: [.iOS(.v17)],
     products: [
         .library(
             name: "Printer",
