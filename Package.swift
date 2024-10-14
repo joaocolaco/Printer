@@ -17,7 +17,6 @@ let package = Package(
             targets: ["Printer"]
         )
     ],
-    dependencies: [],
     targets: [
         .target(
             name: "Printer",
