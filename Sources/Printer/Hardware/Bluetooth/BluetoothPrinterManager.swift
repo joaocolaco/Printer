@@ -65,6 +65,7 @@ public extension BluetoothPrinterManager {
     static var specifiedCharacteristics: Set<String>?
 }
 
+@Observable
 public class BluetoothPrinterManager {
     public var updateHandler: (() -> Void)?
 
