@@ -9,6 +9,7 @@
 import CoreBluetooth
 import Foundation
 
+@Observable
 class BluetoothPeripheralDelegate: NSObject, CBPeripheralDelegate {
     private var services: Set<String>!
     private var characteristics: Set<CBUUID>?
