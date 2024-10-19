@@ -9,6 +9,7 @@
 import CoreBluetooth
 import Foundation
 
+@Observable
 class BluetoothCentralManagerDelegate: NSObject, CBCentralManagerDelegate {
     enum UserDefaultKey {
         static let autoConnectUUID = "auto.connect.uuid"
