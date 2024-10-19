@@ -19,12 +19,12 @@ class BluetoothCentralManagerDelegate: NSObject, CBCentralManagerDelegate {
 
     var peripheralDelegate: BluetoothPeripheralDelegate?
 
-    open var centralManagerDidUpdateState: ((CBCentralManager) -> Void)?
-    open var centralManagerDidDiscoverPeripheralWithAdvertisementDataAndRSSI:
+    var centralManagerDidUpdateState: ((CBCentralManager) -> Void)?
+    var centralManagerDidDiscoverPeripheralWithAdvertisementDataAndRSSI:
         ((CBCentralManager, CBPeripheral, [String: Any], NSNumber) -> Void)?
-    open var centralManagerDidConnectPeripheral: ((CBCentralManager, CBPeripheral) -> Void)?
-    open var centralManagerDidFailToConnectPeripheralWithError: ((CBCentralManager, CBPeripheral, Error?) -> Void)?
-    open var centralManagerDidDisConnectPeripheralWithError: ((CBCentralManager, CBPeripheral, Error?) -> Void)?
+    var centralManagerDidConnectPeripheral: ((CBCentralManager, CBPeripheral) -> Void)?
+    var centralManagerDidFailToConnectPeripheralWithError: ((CBCentralManager, CBPeripheral, Error?) -> Void)?
+    var centralManagerDidDisConnectPeripheralWithError: ((CBCentralManager, CBPeripheral, Error?) -> Void)?
 
     typealias PeripheralChangeBlock = (UUID) -> Void
 
